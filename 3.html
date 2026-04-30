@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Peserta</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(52, 142, 148);
+            /* properti     : Value */
+        }
+
+        h2,
+        p{
+            text-align: center;
+            font-weight: bold
+        }
+
+        .table{
+            width: 100%;
+            border-collapse: collapse;  /* menghilangkan border kecil ditable */
+            margin-top: 20px;
+            font-size: 15px;
+        }
+
+        .card-table{
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 13px;
+            box-shadow: 0 0 19px #ff0000;
+            width: 80%;
+            max-width: 800px;
+            margin: 50px auto;
+        }
+
+        .table thead tr{
+            background-color: rgb(15, 143, 255);
+            color: rgb(248, 254, 255);
+            text-align: center;
+        }
+
+        .table th, .table td{
+            border-bottom: 1px solid #000000;
+            padding: 12px 15px;
+
+        }
+        
+        .btn-plus{
+            text-align: right;
+        }
+
+        .btn-tambah{
+            display: inline-block; /*button mengikuti panjang karakter tesxt*/
+            padding: 10px 20px;
+            background-color: green;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+
+        .btn-tambah:hover{
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-table">
+        <h2>Data Peserta</h2>
+        <p>Dibawah ini adalah data peserta</p>
+
+        <div class="btn-plus" align="right">
+            <a href="2.html" class="btn-tambah">+ Tambah Peserta</a>
+        </div>
+        <table class="table" border="1">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>Email</th>
+                    <th>No Telepon</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Bejo Paijo</td>
+                    <td>bejokoplak@gmail.com</td>
+                    <td>0821234567</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Locatelli</td>
+                    <td>bispak@gmail.com</td>
+                    <td>082456789</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Suwarmad</td>
+                    <td>madungblas@gmail.com</td>
+                    <td>0824654567</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Alfredo Ucup</td>
+                    <td>ucupers@gmail.com</td>
+                    <td>0821234567</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Subekti</td>
+                    <td>bekti@gmail.com</td>
+                    <td>0821234567</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>    
+</body>
+
+</html>
