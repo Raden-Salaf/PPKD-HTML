@@ -29,13 +29,22 @@ body, html{
 .content{
 
     /* RGBA : Red green Blue Alpha */
-    background-color: rgba(116, 108, 108, 0.295);
-    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(0, 0, 0, 0.295);
+    color: #00c6ff;
+    /* text-shadow: 0 0 19px #ff0606; */
+    box-shadow: 0 0 020px #ff0606;
     padding: 40px;
     border-radius: 10px;
     width: 60%;
     /* font-size: 18px; */
     font-weight: bold; 
+}
+
+.diri
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0 0 19px #ff0606;
 }
 
 .content h1{
@@ -143,7 +152,7 @@ footer
 {
     margin-top: 0px;
     color: #007bff;
-    text-shadow: 0 0 19px red;
+    /* text-shadow: 0 0 19px red; */
     font-weight: bold;
     text-align: center;
 }
@@ -167,7 +176,7 @@ footer
     object-fit: cover;
 }
 
-.about-img
+/* .about-img
 {
     width: 220px;
     height: 220px;
@@ -175,3 +184,128 @@ footer
     border-radius: 12px;
     margin: 10px;
 }
+
+.about-img:hover
+{
+    transform: scale(1.05);
+} */
+
+.navbar
+{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    /* top: 0;
+    position: relative; */
+    width: 100%;
+    text-align: center;
+}
+
+nav a
+{
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    color: rgb(233, 230, 44);
+    transition: 0.3s;
+    font-size: 25px;
+    
+}
+
+nav a:hover
+{
+    color: #00c6ff;
+}
+
+.logo
+{
+    color: rgb(233, 230, 44);
+}
+
+.nav-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+
+}
+
+/* Burger Menu Start */
+
+#menu
+{
+    display: flex;
+    gap: 15px;
+}
+
+.nav-container button
+{
+    display: none;
+    font-size: 25px;
+}
+
+.gallery
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.gallery img 
+{
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.gallery img:hover
+{
+    transform: scale(1.05);
+}
+
+/* ukuran Tablet */
+/* NOTE!!!! -> Media WAJIB!!!! dibawah!!! */
+@media (max-width: 768px)
+{
+    .gallery
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-container button
+    {
+        display: block;
+    }
+
+    #menu
+    {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 200px;
+        padding: 10px 0px;
+    }
+
+    #menu a
+    {
+        padding: 10px;
+    }
+
+    #menu.show
+    {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px)
+{
+    .gallery
+    {
+        grid-template-columns: 1fr;
+    }
+}
+/* Burger Menu End */
