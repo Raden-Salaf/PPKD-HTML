@@ -61,6 +61,31 @@ body
 {
     box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
 }
+
+.project-card
+{
+    background-color: white;
+    border: 1px solid #c2c6d6;
+    border-radius: 16px;
+    transition: 0.3s;
+    padding: 30px;
+}
+
+.project-card:hover
+{
+    border-color: var(--ini_variabel);
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.08);
+}
+
+.badge-tech
+{
+    background-color: rgba(187, 200, 216, 0.5);
+    color: var(--ini_variabel);
+    border: 1px solid rgba(0, 88, 190, 0.1);
+    font-size: 12px;
+    font-weight: 700;
+}
+
 /* .title 
 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
